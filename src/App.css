@@ -1,0 +1,209 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+
+}
+
+.body-container{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./assets/bg-intro-mobile.png');
+  background-color: #FF7979;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.descrption{
+  padding: 8.8rem 2.4rem 6.4rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+h1{
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 1.29;
+  letter-spacing: -0.29px;
+  text-align: center;
+  color: #fff;
+  color: #fff;
+}
+
+p{
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.63;
+  text-align: center;
+  color: #fff;
+}
+
+button{
+  border:none;
+  font-size: 1.5rem;
+  line-height: 1.73;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.try-button{
+  font-size: 1.5rem;
+  width: 32.7rem;
+  padding: 1.8rem 6.6rem 1.8rem 6.7rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.15);
+  background-color: #5e54a4;
+  letter-spacing: 0.27px;
+  margin-bottom: 2.4rem;
+  font-weight: bold;
+
+}
+.try-button-subtext{
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 32.7rem;
+  height: 44.2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  padding: 2.4rem;
+}
+
+input{
+  width: 279px;
+  height: 56px;
+  border-radius: 5px;
+  border: solid 1px #dedede;
+  background-color: #fff;
+  padding-left: 1.94rem;
+  opacity: 0.75;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #3d3b48;
+  margin-bottom: 1.6rem;
+
+}
+
+.claim-button{
+  width: 27.9rem;
+  height: 5.6rem;
+  border-radius: 5px;
+  box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.09);
+  background-color: #38cc8b;
+  line-height: 1.73;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+
+.claim-button:hover{
+  background-color: #77e2b3;
+}
+
+.terms-and-services{
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.91;
+  text-align: center;
+  color: #a6a1cf;
+}
+
+.terms-subtext{
+  font-weight: bold;
+  color: #ff7979;
+  font-size: 1.1rem;
+}
+.input-error{
+  background-image: url("./assets/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position:240px center;
+  margin-bottom: 6px;
+}
+
+.error-message{
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: normal;
+  font-style: italic;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ff7979;
+  margin-bottom: 2rem;
+}
+.input-error::placeholder {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #ff7979;
+}
+
+
+@media screen and (min-width: 1440px) {
+  .body-container{
+    background-image: url('./assets/bg-intro-desktop.png');
+    flex-direction: row;
+    justify-content: center;
+    gap:4.5rem;
+  }
+  .descrption{
+    padding: 0px;
+    gap:3.1rem;
+    width:52.5rem;
+  }
+  h1{
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1.1;
+    letter-spacing: -0.52px;
+    text-align: left;
+  }
+
+  p{
+    font-size: 1.6rem;
+    line-height: 1.63;
+    text-align: left;
+  }
+
+  .try-button{
+    width: 54rem;
+    height: 6rem;
+  }
+  form{
+    width: 54rem;
+    height: 47.4rem;
+    padding: 4rem;
+  }
+
+  input{
+    width: 46rem;
+    height: 5.6rem;
+    margin-bottom: 2.6rem;
+  }
+  .claim-button{
+    width: 46rem;
+    height: 5.6rem;
+  }
+
+  .input-error{
+    background-position:409px center;
+  
+  }
+}
